@@ -6,12 +6,12 @@ public class Qwerty {
 		hello("Name");
 		hello("User");
 
-		double len = 5;
-		System.out.println("Площадь" + len + "что-то" + area(len) );
+		Square s = new Square(5);
+		System.out.println(" Площадь " + s.l + " что-то " + area(s) );
 
-		double a = 4;
-		double b = 6;
-		System.out.println("Площадь" + a + "И" + b + "что-то" + area(a, b) );
+		Rectangle r = new Rectangle(4 ,6);
+
+		System.out.println(" Площадь " + r.a + " И " + r.b + " что-то " + area(r) );
 
 	}
 
@@ -20,12 +20,12 @@ public class Qwerty {
 	}
 
 
-	public static double area ( double l) {
-		return 1 * 1 ;
+	public static double area ( Square s) {
+		return s.l * s.l  ;
 
 	}
-	public static double area (double a , double b) {
-		return a * b;
+	public static double area (Rectangle r) {
+		return r.a * r.b;
 	}
 
 }
