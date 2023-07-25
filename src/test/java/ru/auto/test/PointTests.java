@@ -8,11 +8,13 @@ public class PointTests {
   @Test
   public void testArea(){
     Point r = new Point (12,6);
-    Assert.assertEquals(r.sqrt(),6.0);
+    Point s = new Point(14,54);
+    Assert.assertEquals(distance(r,s);
   }
-  @Test
-  public void testSqrt(){
-    Point r = new Point (12,6);
-    Assert.assertEquals(r.sqrt(),8.0);
+
+  public static double distance(Point p1, Point p2) {
+
+    double result = (p1.p1 - p2.p1) + (p1.p2 - p2.p2);
+    return result;
   }
 }
