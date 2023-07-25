@@ -10,4 +10,9 @@ public class PointTests {
     Point r = new Point (12,6);
     Assert.assertEquals(r.sqrt(),6.0);
   }
+  @Test
+  public void testSqrt(){
+    Point r = new Point (12,6);
+    Assert.assertEquals(r.sqrt(),8.0);
+  }
 }
