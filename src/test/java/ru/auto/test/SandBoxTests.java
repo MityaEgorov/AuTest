@@ -7,14 +7,11 @@ public class SandBoxTests {
 
   @Test
   public void testArea(){
-    Point r = new Point(12,6);
-    Point s = new Point(14,54);
-    Assert.assertEquals(distance(r,s);
+    Point r = new Point(12.0,6.0);
+    Point s = new Point(35.0,45.0);
+    assert Qwerty.distance(r,s) == 45.27692569068709;
+    Assert.assertEquals (Qwerty.distance(r,s), 46.27692569068709);
   }
 
-  public static double distance(Point p1, Point p2) {
 
-    double result = (p1.x - p2.x) + (p1.y - p2.y);
-    return result;
-  }
 }
