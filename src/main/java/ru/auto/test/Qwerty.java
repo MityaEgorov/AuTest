@@ -1,17 +1,17 @@
 
 package ru.auto.test;
 
+
 public class Qwerty {
 	public static void main(String[] args) {
 
 
+		Point p1 = new Point(12, 6);
+		Point p2 = new Point(35, 45);
+		double result = distance(p1, p2);
 
-		Point r = new Point(12, 6);
-		Point s = new Point(35, 45);
-		double result = distance(r, s);
 
-
-		System.out.println(" Расстояние между точками " + r.x + " И " + s.y + "=" +  result);
+		System.out.println(" Расстояние между точками " + p1.x + " И " + p2.y + " = " + result);
 
 	}
 
@@ -20,6 +20,6 @@ public class Qwerty {
 		double diffX = (p1.x - p2.x) * (p1.x - p2.x);
 		double diffY = (p1.y - p2.y) * (p1.y - p2.y);
 		return Math.sqrt(diffX + diffY);
-
 	}
 }
+
